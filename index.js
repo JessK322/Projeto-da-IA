@@ -24,3 +24,7 @@ document.getElementById("file-upload").addEventListener("change", function(event
     confirmBtn.style.display = "none";
   }
 });
+
+document.getElementById("confirm-btn").addEventListener("click", function() {
+  window.open("processamento.html");
+});
