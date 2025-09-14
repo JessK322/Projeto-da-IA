@@ -1,0 +1,79 @@
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #bfbfbf;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      color: black;
+    }
+
+    .gif-container {
+      width: 200px;
+      height: 200px;
+    margin-bottom: 20px;
+    animation: float 3s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .gif-container img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+
+    @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    }
+
+    .loading-text {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: white;
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 3px solid #ccc;
+      border-top: 3px solid #333;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  color: #000000;
+  font-weight: normal;
+}
